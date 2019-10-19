@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="45"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 03:25:00 PM"/>
+        <attribute name="created" value="NDU7REVTS1RPUC1OS1VIQU8xOzIwMTktMTAtMDk7MDk6MDU6NTEgw5bDljsyNzQ4"/>
+        <attribute name="edited" value="NDU7REVTS1RPUC1OS1VIQU8xOzIwMTktMTAtMDk7MTA6MDc6MzYgw5bDljs0OzI4NTY="/>
+        <attribute name="edited" value="TWVydDtERVNLVE9QLVZORU8wOTQ7MjAxOS0xMC0wOTswMzoyNTowMCBQTTs0OzI4NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rastgele, tahmin, saya&#231;, hak" type="Integer" array="False" size=""/>
+            <assign variable="rastgele" expression="0"/>
+            <assign variable="tahmin" expression="0"/>
+            <assign variable="saya&#231;" expression="1"/>
+            <assign variable="rastgele" expression="Random(100)"/>
+            <output expression="&quot;bir tahmin giriniz&quot;" newline="True"/>
+            <do expression="tahmin!=rastgele">
+                <input variable="tahmin"/>
+                <if expression="tahmin!=rastgele">
+                    <then>
+                        <if expression="tahmin&gt;rastgele">
+                            <then>
+                                <output expression="&quot;Daha k&#252;&#231;&#252;k bir de&#287;er giriniz&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Daha b&#252;y&#252;k bir de&#287;er giriniz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="saya&#231;" expression="saya&#231;+1"/>
+                    </then>
+                    <else>
+                        <output expression="rastgele&amp;&quot; say&#305;s&#305;n&#305; &quot;&amp;saya&#231;&amp;&quot; defada buldunuz&quot;" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
